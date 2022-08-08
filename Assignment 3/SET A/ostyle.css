@@ -1,0 +1,20 @@
+form{
+border: 2px solid black;
+background-color: light grey;
+height:340px;width:500px;
+}
+
+
+
+h3{
+margin-top:1px;
+border:1px solid blue;
+color: white;
+background-color: blue;
+}
+
+
+
+p{
+margin-left:15px;
+}
