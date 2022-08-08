@@ -1,0 +1,26 @@
+<html>
+<head>
+<script>
+var n=prompt("Enter a number");
+
+</script>
+</head>
+</html>
+
+
+<?php
+
+echo "Enter a number ";
+$fact = 1;
+echo "Factorial of "+num+" = ";
+
+
+while(num!=0)
+{
+	fact*=num--;
+}
+
+document.write(fact);
+
+
+
