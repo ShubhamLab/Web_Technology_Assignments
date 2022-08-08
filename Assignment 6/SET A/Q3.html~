@@ -1,0 +1,62 @@
+<html>
+<head>
+<title>Username and password validation:</title>
+</head>
+<body>
+<script type="text/javascript">
+function fun()
+{       
+        
+        var p=document.getElementById("passwor").value;
+        var p1=document.getElementById("passwor1").value;
+        var a=document.getElementById("username").value;
+
+    if(a=="")
+     {
+         document.getElementById("message").innerHTML="**Username can not be empty:**";
+          return false;
+     }
+      
+        
+    if(p=="")
+    {
+           document.getElementById("message1").innerHTML="**password can not be empty:**";
+          return false;
+    }  
+     if(p.length<3)
+    {
+        document.getElementById("message1").innerHTML="**Password can not be less than 3 digit:**";
+          return false;
+    }   
+     if(p.length>20)
+    {
+      document.getElementById("message1").innerHTML="**Password can not be greater than 20digit:**";       
+          return false;
+
+     }
+           
+    if(p1=="")
+    {
+           document.getElementById("message1").innerHTML="**password can not be empty:**";
+          return false;
+    }   
+    
+       if(p!=p1)
+       {
+           document.getElementById("message2").innerHTML="**Both password should be same:**;
+                               return false;
+        }   
+}
+</script>
+<form onsubmit="return fun()">
+Username:<input type="text" id="username" value="">
+<span id="message"style="color:blue;"></span><br>
+Password:<input type="password" id="password" value="">
+<span id="message1" style="color:blue;"></span><br>
+confirm Password:<input type="password" id="passwor1" value="">
+<span id="message2" style="color:blue;"></span><br>
+<input type="submit" value="Submit">
+</form>
+</body>
+</html>
+

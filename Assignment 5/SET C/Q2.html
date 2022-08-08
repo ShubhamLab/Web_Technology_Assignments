@@ -1,0 +1,66 @@
+<html>
+<head>
+<script>
+var arr=[20];
+//var sum=0;
+var n=prompt("How many elements you want to enter");
+for(i=0;i<n;i++)
+{
+	
+	arr[i]=prompt("Elements");
+}
+parseInt(arr);
+do{
+	var a=prompt("Following are the operations\n1 Display\n2 Maximum\n3 Minimum\n4 Sum\n5 Average\n6 Exit");
+	
+	
+	switch(parseInt(a))
+	{
+		case 1: alert("Following are the array elements "+arr);
+			break;
+
+		case 2: var ma=arr[0];
+			for(var i=0;i<n;i++)
+			{
+				if(arr[i]>ma)
+				{	
+					ma=arr[i];
+				}
+			}
+			alert("Maximum number is : "+ma);
+			break;
+	
+		case 3: var mi=arr[0];
+			for(var i=0;i<n;i++)
+			{
+				if(arr[i]<mi)
+				{	
+					mi=arr[i];
+				}
+			}
+			alert("Minimum number is : "+mi);
+			break;
+
+		case 4:var sum=0;
+			for(var i=0;i<n;i++)
+             	       {
+                	    sum += parseInt(arr[i]);
+             	       }
+                    
+			 alert("Sum :\n"+sum);
+                   
+                                 break;
+
+		case 5: var avg=0;
+			avg=parseInt(sum/n);
+			alert("Average : "+avg);	
+			break;
+
+		case 6: alert("Program has been terminated");
+			 break;
+
+}
+}while(a!=6);
+</script>
+</head>
+</html>

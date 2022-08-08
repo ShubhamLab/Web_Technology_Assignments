@@ -1,0 +1,58 @@
+<html>
+<head>
+<script>
+
+function fun()
+{       
+
+        var alpha =/^[A-Za-z]+$/;
+
+        var m=document.getElementById("mobile").value;
+
+        var a=document.getElementById("username").value;
+
+    	if((a=="")&&(m==""))
+     	{
+        	document.getElementById("message").innerHTML="WARNING : Username cannot be empty";
+          	document.getElementById("message1").innerHTML="WARNING : Mobile number cannot be empty";
+          	return false;
+        
+     	}
+      
+	if(a.match(alpha))
+      	{
+            true;
+      	}
+         
+	else
+        {
+         	document.getElementById("message").innerHTML="WARNING : Username should contain only alphabets, no other characters are allowed";
+          	return false; 
+        }
+     
+      
+       if(m=="")	
+       {
+       		document.getElementById("message1").innerHTML="WARNING : Number cannot be empty";
+          	return false;
+       }  
+     
+	if(m.length!=10)
+    	{
+        	document.getElementById("message1").innerHTML="WARNING: Number must contain 10 digits";
+          	return false;
+   	}   
+     
+	
+}
+</script>
+<form onsubmit="return fun()">
+Username:<input type="text" id="username" value="">
+<span id="message"style="color:red;"></span><br>
+Mobile No:<input type="text" id="mobile" value="">
+<span id="message1" style="color:red;"></span><br>
+<input type="submit" value="Submit">
+</form>
+</head>
+</html>
+

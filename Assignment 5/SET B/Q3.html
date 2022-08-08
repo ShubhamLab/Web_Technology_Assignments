@@ -1,0 +1,31 @@
+<html>
+<head>
+<script>
+var stack=[];
+var queue=[];
+do{
+	var c=prompt("Following are the operations\n1 Insert(stack)\n2 Delete(stack)\n3 Display(stack)\n4 Insert(queue)\n5 Delete(queue)\n6 Display(queue)\n");
+	switch(parseInt(c))
+	{
+		case 1: stack.push(prompt("Enter a number"));
+			break;
+
+		case 2: alert("Element deleted : "+stack.pop());
+			break;
+
+		case 3: alert("Elements in stack are:\n"+stack);
+			break;
+
+		case 4: queue.push(prompt("Enter a number"));
+			break;
+	
+		case 5: alert("Elements deleted : "+queue.shift());
+			break;
+
+		case 6: alert("Elements in queue are:\n"+queue);
+			break;
+	}
+}while(c!=7);
+</script>
+</head>
+</html>

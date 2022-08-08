@@ -1,0 +1,89 @@
+<html>
+<head>
+<script>
+
+
+function clickonbutn()
+{
+	
+	var n=document.getElementById("name").value;
+	if(n=="")	
+       	{
+       		document.getElementById("message").innerHTML="WARNING : Name cannot be empty";
+          	return false;
+       	}  
+
+
+	var q=document.getElementById("quantity").value;
+	if(q=="")	
+       	{
+       		document.getElementById("message1").innerHTML="WARNING : Quantity cannot be empty";
+          	return false;
+       	}  
+	
+
+	var r=document.getElementById("rate").value;
+	if(r=="")	
+       	{
+       		document.getElementById("message2").innerHTML="WARNING : Rate cannot be empty";
+          	return false;
+       	}  
+	var total=0;
+	var tot=0;
+	var g=0;
+	if(q<5)
+	{
+
+		total=q*r;
+		document.write("\nGrand Total : "+total);
+
+	}
+	else if(q>5 && q<25)
+	{
+
+
+		total=q*r;
+		document.write("\nTotal without discount : "+total);
+		tot=0.05*(total);
+		g=total-tot;
+		document.write("\nGrand total : "+g);
+	}
+	else if(q>25 && q<50)
+	{
+
+
+		total=q*r;
+		document.write("\nTotal without discount : "+total);
+		tot=0.15*(total);
+		g=total-tot
+		document.write("\nGrand total : "+g);
+	}
+	else if(q>=50)
+	{
+
+		
+		total=q*r;
+		document.write("\nTotal without discount : "+total);
+		tot=0.20*(total);
+		g=total-tot
+		document.write("\nGrand total : "+g);
+	}
+}
+</script>
+
+<form>
+Product Name : <input type="text" id="name">
+<span id="message"style="color:red;"></span><br>
+
+<br>
+<br>
+Quantity : <input type="text" id="quantity">
+<span id="message1"style="color:red;"></span><br>
+<br>
+<br>
+Rate : <input type="text" id="rate">
+<span id="message2"style="color:red;"></span><br>
+<input  type="button" value="submit" onclick="clickonbutn()" >
+</form>
+</head>
+</html>

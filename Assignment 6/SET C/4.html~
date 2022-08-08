@@ -1,0 +1,17 @@
+<html>
+<title>4</title>
+<head>
+<script>
+function clickedprev()
+{
+window.open("3.html")
+}
+</script>
+</head>
+<h1>4th page</h1>
+<form>
+<button onclick="clickedprev()" name="2">Previous page</button>
+
+</form>
+</body>
+</html>

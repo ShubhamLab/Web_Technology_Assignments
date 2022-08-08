@@ -1,0 +1,68 @@
+<html>
+<head>
+<script>
+
+
+
+function funu()
+{
+
+var  a=document.getElementById("Username").value;
+
+if(a=="")
+{
+document.getElementById("message1").innerHTML="Username should not have space";
+return false;
+}
+	
+
+if(!isNaN(a))
+{
+document.getElementById("message1").innerHTML="Username Invalid";
+return false;
+}
+}
+
+
+
+function funm()
+{
+
+var b=document.getElementById("Mobile Number").value;
+if( b>10)
+{
+
+document.getElementById("message").innerHTML="Invalid mobile number";
+return false;
+}
+}
+
+
+
+</script>
+document.getElementById("message1").innerHTML="Username Invalid";
+
+<center>
+<form name="abc" onsubmit="return funu()">
+Username:<input type="text" id="Username">
+
+<input type="submit" value="submit">
+<br><span id="message1"> </span>
+</center>
+</form>
+
+
+
+
+<form name="def" onsubmit="return funm()">
+<center>
+Mobile Number:<input type="text" id="Mobile Number">
+<input type="submit" value="submit">
+<span id="message"></span>
+
+</center>
+</form>
+
+</head>
+</html>
+

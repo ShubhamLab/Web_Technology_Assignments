@@ -1,0 +1,24 @@
+<html>
+<title>3</title>
+<head>
+<script>
+function clickednext()
+{
+window.open("4.html");
+}
+
+function clickedprev()
+{
+window.open("2.html")
+}
+</script>
+</head>
+
+<h1>3rd page</h1>
+<form>
+<button onclick="clickedprev()">Previous page</button>
+
+<button onclick="clickednext()">Next page</button>
+</form>
+</body>
+</html>

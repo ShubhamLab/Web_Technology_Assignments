@@ -1,0 +1,24 @@
+<html>
+<head>
+
+<script>
+var today=new Date();
+var pyear=today.getFullYear();
+var pmonth=today.getMonth();
+var pday=today.getDate();
+
+var byear=prompt("Enter Birth year:");
+var bmonth=prompt("Enter Birth month:");
+var bdate=prompt("Enter Birth date:");
+
+var age=pyear-byear;
+
+alert("Age is : "+Math.abs(age));
+
+
+
+</script>
+</head>
+</html>  
+
+

@@ -1,0 +1,23 @@
+<html>
+<head>
+<script>
+var n = prompt("Enter a number");
+var temp;
+var sum=0;
+var rem;
+temp=n;
+
+while(temp>0)
+{
+	rem=temp%10;
+	sum=sum+(rem*rem*rem);
+	temp=parseInt(temp/10);
+}
+
+if(n==sum)
+	document.write("Armstrong number");
+else
+	document.write("Not an armstrong number");
+</script>
+</head>
+</html>
